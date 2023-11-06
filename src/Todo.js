@@ -14,7 +14,6 @@ export default function Todo({ todo, dispatch }) {
       </span>
       <button onClick={handleToggle}>Toggle</button>
       <button onClick={handleDelete}>Delete</button>
-      <Hello>
     </div>
   );
 }
