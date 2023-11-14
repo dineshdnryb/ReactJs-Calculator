@@ -1,4 +1,5 @@
 import { useState, useReducer } from "react";
+import { Link } from "react-router-dom";
 import Todo from "./Todo.js";
 export const ACTIONS = {
   ADD_TODO: "add-todo",
@@ -18,7 +19,7 @@ function reducer(todos, action) {
         return todo;
       });
     case ACTIONS.DELETE_TODO:
-      return todos.filter((todo) => todo.id != action.payload.id);
+      return todos.filter((todo) => todo.id !== action.payload.id);
     default:
       return todos;
   }
@@ -43,6 +44,9 @@ function Temp() {
       <form onSubmit={handleSubmit}>
         <input type="text" value={name} onChange={onChangesetName} />
       </form>
+      <Link to="/">
+        <button>Calculator</button>
+      </Link>
       {todos.map((todo) => {
         return <Todo key={todo.id} todo={todo} dispatch={dispatch} />;
       })}

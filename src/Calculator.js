@@ -4,7 +4,7 @@ function Calculator() {
   return (
     <div className="calculator-grid">
       <div className="output">
-        <div className="previous-operand">554</div>
+        <div className="previous-operand">55jjn4</div>
         <div className="current-operand">5555554</div>
       </div>
       <button className="span-tow">AC</button>
@@ -27,7 +27,7 @@ function Calculator() {
       <button className="span-tow">=</button>
 
       <Link to="Temp">
-        <button>New</button>
+        <button>UseReducer</button>
       </Link>
     </div>
   );
