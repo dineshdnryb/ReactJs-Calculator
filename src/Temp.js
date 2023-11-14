@@ -45,7 +45,7 @@ function Temp() {
         <input type="text" value={name} onChange={onChangesetName} />
       </form>
       <Link to="/">
-        <button>Calculator</button>
+        <button>Calculator'</button>
       </Link>
       {todos.map((todo) => {
         return <Todo key={todo.id} todo={todo} dispatch={dispatch} />;
